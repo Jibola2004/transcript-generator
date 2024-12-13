@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Transcript Generator</h1>
+    <div class="table-container">
+        <div class="grading-system">
+            <label for="gradeSystem">Choose your grading system:</label>
+            <select name="gradeSystem" id="gradeSystem">
+                <option value="AA/BA/BB">AA/BA/BB</option>
+                <option value="A1/A2/A3">A1/A2/A3</option>
+                <option value="A+/A/A-">A+/A/A-</option>
+            </select>
+        </div>
+        <div class="previousCoursework">
+            <label for="cgpa">CGPA:</label>
+            <input type="number" min="0" max="10" id="cgpa">
+            <label for="prev-credits">Total Credit:</label>
+            <input type="number" id="prev-credits">
+        </div>
+        <table >
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credit</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody class="course-row">
+               <!---- <tr>
+                    <td>cng 210</td>
+                    <td>cng 210</td>
+                    <td>3</td>
+                    <td>AA</td>
+                </tr> -->
+            </tbody>
+        </table>
+        <div class="btn">
+            <button id="add">Add Course</button>
+            <button id="gpa-calculator">Calculate GPA</button>
+        </div>
+    </div>
+    <h2 id="result"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
